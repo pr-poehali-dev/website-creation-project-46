@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -121,6 +122,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <WhatsAppButton />
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
@@ -149,7 +151,10 @@ const Index = () => {
             ))}
           </nav>
 
-          <Button>Получить консультацию</Button>
+          <Button onClick={() => window.open('https://wa.me/79781234567', '_blank')}>
+            <Icon name="MessageCircle" size={18} className="mr-2" />
+            WhatsApp
+          </Button>
         </div>
       </header>
 
@@ -172,12 +177,13 @@ const Index = () => {
               Работаем с 2010 года. Более 500 довольных клиентов.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="text-lg px-8">
-                <Icon name="Phone" size={20} className="mr-2" />
-                Заказать услугу
+              <Button size="lg" className="text-lg px-8" onClick={() => window.open('https://wa.me/79781234567', '_blank')}>
+                <Icon name="MessageCircle" size={20} className="mr-2" />
+                Написать в WhatsApp
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8">
-                Рассчитать стоимость
+                <Icon name="Phone" size={20} className="mr-2" />
+                +7 (978) 123-45-67
               </Button>
             </div>
             
@@ -397,13 +403,13 @@ const Index = () => {
             Свяжитесь с нами для бесплатной консультации и расчета стоимости услуг
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              <Icon name="Phone" size={20} className="mr-2" />
-              +7 (978) 123-45-67
+            <Button size="lg" variant="secondary" className="text-lg px-8" onClick={() => window.open('https://wa.me/79781234567', '_blank')}>
+              <Icon name="MessageCircle" size={20} className="mr-2" />
+              Написать в WhatsApp
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Icon name="Mail" size={20} className="mr-2" />
-              info@cleanresult-yalta.ru
+              <Icon name="Phone" size={20} className="mr-2" />
+              +7 (978) 123-45-67
             </Button>
           </div>
         </div>
