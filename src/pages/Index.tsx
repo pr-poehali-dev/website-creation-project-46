@@ -125,7 +125,7 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Sparkles" className="text-primary" size={28} />
-            <span className="text-xl font-bold">ПроКлининг</span>
+            <span className="text-xl font-bold">Clean Result Ялта</span>
           </div>
           
           <nav className="hidden md:flex gap-6">
@@ -399,11 +399,11 @@ const Index = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" variant="secondary" className="text-lg px-8">
               <Icon name="Phone" size={20} className="mr-2" />
-              +7 (495) 123-45-67
+              +7 (978) 123-45-67
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <Icon name="Mail" size={20} className="mr-2" />
-              info@procleaning.ru
+              info@cleanresult-yalta.ru
             </Button>
           </div>
         </div>
@@ -415,10 +415,10 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Sparkles" className="text-primary" size={24} />
-                <span className="font-bold">ПроКлининг</span>
+                <span className="font-bold">Clean Result Ялта</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Профессиональные клининговые услуги для бизнеса с 2010 года
+                Профессиональные клининговые услуги в Ялте с 2010 года
               </p>
             </div>
             
@@ -445,15 +445,15 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Контакты</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>+7 (495) 123-45-67</li>
-                <li>info@procleaning.ru</li>
-                <li>Москва, ул. Примерная, 123</li>
+                <li>+7 (978) 123-45-67</li>
+                <li>info@cleanresult-yalta.ru</li>
+                <li>Ялта, Крым</li>
               </ul>
             </div>
           </div>
           
           <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-            © 2024 ПроКлининг. Все права защищены.
+            © 2024 Clean Result Ялта. Все права защищены.
           </div>
         </div>
       </footer>
